@@ -3,7 +3,7 @@ import { UploadResult, ref, uploadBytes } from "firebase/storage";
 import { storage } from "@/db/DB";
 
 const MAX_SIZE_MB = 10;
-const MAX_DURATION_S = 30;
+const MAX_DURATION_S = 60;
 
 const validateFile = (file: File): Promise<void> => {
   return new Promise((resolve, reject) => {
